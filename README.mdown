@@ -3,7 +3,7 @@
 If you wish to activate TextMate from an ssh session you can do so by copying the `rmate` (ruby) script to the server you are logged into. The script will connect back to TextMate running on your Mac so you should setup an ssh tunnel (as your Mac is likely behind NAT):
 
 	ssh -R 52698:localhost:52698 user@example.org
-
+        
 # Install
 
 ## Rubygems
@@ -22,6 +22,11 @@ Installing into `~/bin` can be done using these two lines:
 
 	curl -Lo ~/bin/rmate https://raw.github.com/textmate/rmate/master/bin/rmate
 	chmod a+x ~/bin/rmate
+
+Another example:
+
+        curl -Lo /usr/local/bin/rmate https://raw.github.com/textmate/rmate/master/bin/rmate
+        chmod a+x /usr/local/bin/rmate
 
 If `~/bin` is not already in your `PATH` then you may want to add something like this to your shell startup file (e.g. `~/.profile`):
 
