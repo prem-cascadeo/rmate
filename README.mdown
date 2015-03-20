@@ -25,7 +25,7 @@ Installing into `~/bin` can be done using these two lines:
 
 Another example:
 
-        curl -Lo /usr/local/bin/rmate https://raw.github.com/textmate/rmate/master/bin/rmate
+        curl -Lo /usr/local/bin/rmate https://raw.githubusercontent.com/textmate/rmate/master/bin/rmate
         chmod a+x /usr/local/bin/rmate
 
 If `~/bin` is not already in your `PATH` then you may want to add something like this to your shell startup file (e.g. `~/.profile`):
